@@ -1,0 +1,430 @@
+/* set default */
+html {
+  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+:root {
+  --color-white: #fff;
+  --color-purple: #7209b7;
+  --color-blue: #4895ef;
+  --color-dark-blue: #4361ee;
+  --color-pink: #f72585;
+  --color-dark: #7209b7;
+  --color-footer: #3a0ca3;
+  --font-family: "Open Sans", "Rubik";
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* Provide consistent margin and padding across browsers */
+html,
+body,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set some defaults */
+html {
+  box-sizing: border-box;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.45;
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Apply width and height values apply to the content, padding and border */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Set colour for headings */
+h1,
+h2,
+h3 {
+  color: var(--color-purple);
+  text-align: center;
+}
+
+/* Set h1 font sizing */
+h1 {
+  font-size: 6rem;
+  font-weight: 2rem;
+  line-height: 2.25rem;
+}
+
+/* Set h2 font sizing */
+h2 {
+  font-size: 4rem;
+  font-weight: 2rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+p {
+  font-style: normal;
+  font-size: 2.25rem;
+}
+
+ul {
+  font-size: 2rem;
+}
+
+/* Set strong font characteristics */
+strong {
+  color: var(--color-pink);
+  font-weight: 600;
+}
+
+/* Set background colour and border for header */
+header {
+  border-bottom: 4px solid var(--color-pink);
+  background-color: var(--color-dark-blue);
+  padding: 2rem calc(5vw - 0.5rem);
+  /* padding: 1rem; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  color: var(--color-white);
+}
+
+/* NAV */
+/* Temp nav logo */
+.nav-logo {
+  height: 50px;
+  width: 50px;
+  background-color: #4895ef;
+}
+
+.nav-links a {
+  padding: 1rem;
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+.nav-links a:hover {
+  color: var(--color-purple);
+}
+
+/* INTRO */
+
+.intro {
+  border-bottom: 3px solid var(--color-pink);
+}
+
+.intro-container {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.headline {
+  padding: 8rem 10rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+@keyframes elevateRight {
+  from {
+    transform: translateY(100%) rotate(20deg);
+    transform-origin: left;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transform-origin: left;
+  }
+  65% {
+    transform: rotate(0deg);
+    transform-origin: left;
+  }
+}
+
+@media (min-width: 1300px) {
+  .headline {
+    animation-name: elevateRight;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+  }
+}
+
+.headline p {
+  color: var(--color-pink);
+  font-style: normal;
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.me-pic {
+  max-width: 40vw;
+  align-self: flex-start;
+}
+
+.me-pic img {
+  filter: drop-shadow(20px 0px 0px var(--color-pink));
+  width: 100%;
+  max-height: 50vh;
+  display: block;
+}
+
+.me-pic img:hover {
+  filter: drop-shadow(-20px 0px 0px var(--color-purple));
+  right: -20px;
+}
+
+@media (min-width: 1000px) {
+  .headline h1 {
+    text-align: left;
+  }
+
+  .headline p {
+    text-align: left;
+  }
+
+  .intro-container {
+    height: 70vh;
+  }
+}
+
+/* ABOUT  */
+.about {
+  background-color: var(--color-blue);
+  position: relative;
+  border-bottom: 2px solid var(--color-pink);
+}
+
+.about-headers h2 {
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4vw;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.about-container p {
+  color: var(--color-white);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 55rem;
+}
+
+.social-contacts {
+  align-content: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 60px);
+  justify-content: center;
+  list-style: none;
+  padding: 50px 50px;
+}
+
+.social-link {
+  background: var(--color-pink);
+  border-radius: 50%;
+  display: block;
+  height: 60px;
+  margin: 0;
+  outline-color: transparent;
+  outline-offset: 0.25rem;
+  outline-width: 2px;
+  padding: 0.75rem;
+  transition: all 200ms linear;
+  transition-delay: 150ms;
+}
+
+.social-link:focus,
+.social-link:hover {
+  background: var(--color-pink);
+  outline-color: var(--color-foreground);
+  transition-delay: 0ms;
+}
+.social-link path {
+  fill: var(--color-white);
+  transition: 200ms fill linear;
+  transition-delay: 150ms;
+}
+.social-link:focus path,
+.social-link:hover path {
+  fill: var(--color-dark-blue);
+  transition-delay: 0ms;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.circle-image {
+  filter: drop-shadow(10px 10px 0px var(--color-pink));
+  display: block;
+  width: 100%;
+}
+
+.photos {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.about-contents {
+  margin: 0 auto;
+  padding: 1rem 2vw;
+}
+
+/* WORK  */
+
+.my-work {
+  background-color: var(--color-dark-blue);
+  border-bottom: 2px solid var(--color-pink);
+}
+
+.my-work-headers {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.my-work-headers h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.my-work-headers p {
+  color: var(--color-white);
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 5rem;
+}
+
+.my-work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 160rem;
+  margin: 1rem auto;
+}
+
+.my-work-container h3 {
+  color: var(--color-dark);
+  font-weight: bold;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.my-work-spec {
+  background-color: var(--color-blue);
+  border: 4px solid var(--color-pink);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2%;
+  min-width: 35rem;
+  margin: 2rem;
+  position: relative;
+}
+
+.my-work-spec p {
+  color: var(--color-white);
+  max-width: 15em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.my-work-spec h4 {
+  max-width: 15em;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.my-work-spec img {
+  display: block;
+  max-height: 300px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  pointer-events: none;
+  position: relative;
+}
+
+.my-work-spec ul {
+  color: var(--color-white);
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 20px;
+  text-align: center;
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .my-work-spec:hover {
+    top: -4px;
+  }
+}
+
+footer {
+  background-color: var(--color-footer);
+  height: 100px;
+}
