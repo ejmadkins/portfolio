@@ -42,16 +42,16 @@ h3 {
 html {
   box-sizing: border-box;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.45;
   font-family: var(--font-family);
   background-color: var(--color-white);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   html {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -72,30 +72,33 @@ h3 {
 
 /* Set h1 font sizing */
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 2rem;
-  line-height: 2.25rem;
+  line-height: 3.5rem;
 }
 
 /* Set h2 font sizing */
 h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 2rem;
   line-height: 2.25rem;
 }
 
+h3 {
+  font-weight: bold;
+  font-weight: 2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
 h4 {
-  font-size: 2rem;
+  font-size: 1.1rem;
   line-height: 2.25rem;
 }
 
 p {
   font-style: normal;
-  font-size: 2.25rem;
-}
-
-ul {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /* Set strong font characteristics */
@@ -108,7 +111,7 @@ strong {
 header {
   border-bottom: 4px solid var(--color-pink);
   background-color: var(--color-dark-blue);
-  padding: 2rem calc(5vw - 0.5rem);
+  padding: 0.5rem calc(5vw - 0.5rem);
   /* padding: 1rem; */
 }
 
@@ -135,16 +138,19 @@ footer {
   padding: 1rem;
   color: var(--color-white);
   text-decoration: none;
-  font-size: 2rem;
   font-weight: bold;
-  line-height: 1rem;
+  font-size: 1.2rem;
 }
 
 .nav-links a:hover {
   color: var(--color-purple);
 }
 
-/* INTRO */
+/* 
+//////////////////////////////
+//////      INTRO       //////
+//////////////////////////////
+*/
 
 .intro {
   border-bottom: 3px solid var(--color-pink);
@@ -156,14 +162,15 @@ footer {
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
+  gap: 0 3rem;
   position: relative;
   margin: 0 auto;
   width: 90vw;
 }
 
 .headline {
-  padding: 8rem 10rem;
-  font-size: 4rem;
+  /* padding: 1rem 2rem; */
+  padding: 2rem 0 0 0;
   text-align: center;
 }
 
@@ -182,19 +189,11 @@ footer {
   }
 }
 
-@media (min-width: 1300px) {
-  .headline {
-    animation-name: elevateRight;
-    animation-duration: 1.2s;
-    animation-fill-mode: both;
-  }
-}
-
 .headline p {
   color: var(--color-pink);
   font-style: normal;
-  font-size: 2rem;
-  padding: 2rem 0;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
   text-align: center;
 }
 
@@ -215,21 +214,34 @@ footer {
   right: -20px;
 }
 
-@media (min-width: 1000px) {
-  .headline h1 {
+@media (min-width: 900px) {
+  /* .headline h1 {
     text-align: left;
   }
 
   .headline p {
     text-align: left;
-  }
+  } */
 
   .intro-container {
     height: 70vh;
   }
 }
 
-/* ABOUT  */
+@media (min-width: 1400px) {
+  .headline {
+    animation-name: elevateRight;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  }
+}
+
+/* 
+//////////////////////////////
+//////      ABOUT       //////
+//////////////////////////////
+*/
+
 .about {
   background-color: var(--color-blue);
   position: relative;
@@ -238,7 +250,7 @@ footer {
 
 .about-headers h2 {
   margin: 0 auto;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .about-container {
@@ -246,9 +258,10 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 4rem 4vw;
+  gap: 2rem;
+  padding: 0 2rem;
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 90vw;
 }
 
 .about-container p {
@@ -265,7 +278,7 @@ footer {
   grid-template-columns: repeat(3, 60px);
   justify-content: center;
   list-style: none;
-  padding: 50px 50px;
+  padding: 1rem;
 }
 
 .social-link {
@@ -317,16 +330,23 @@ footer {
 }
 
 .photos {
-  margin: 0 auto;
-  max-width: 40rem;
+  /* margin: 0 auto; */
+  max-width: 20rem;
+  padding: 0 0 2rem 0;
 }
 
 .about-contents {
-  margin: 0 auto;
-  padding: 1rem 2vw;
+  /* margin: 0 auto; */
+  /* padding: 1rem 2vw; */
+  /* max-width: 60rem; */
+  max-width: 40rem;
 }
 
-/* WORK  */
+/* 
+//////////////////////////////
+//////      WORK        //////
+//////////////////////////////
+*/
 
 .my-work {
   background-color: var(--color-dark-blue);
@@ -336,13 +356,13 @@ footer {
 .my-work-headers {
   text-align: center;
   margin: 0 auto;
-  max-width: 100rem;
+  max-width: 50rem;
 }
 
 .my-work-headers h2 {
-  text-align: center;
+  /* text-align: center; */
   margin: 0 auto;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .my-work-headers p {
@@ -350,24 +370,23 @@ footer {
   display: block;
   margin: 0 auto;
   text-align: center;
-  padding: 2rem 5rem;
+  padding: 0 2rem;
 }
 
 .my-work-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  max-width: 160rem;
-  margin: 1rem auto;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .my-work-container h3 {
   color: var(--color-dark);
-  font-weight: bold;
-  font-weight: 800;
-  font-size: 2.5rem;
-  padding: 0.5rem;
 }
 
 .my-work-spec {
@@ -376,38 +395,46 @@ footer {
   box-sizing: border-box;
   box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2%;
-  min-width: 35rem;
-  margin: 2rem;
+  /* width: 400px; */
+  /* max-width: 40rem; */
+  /* margin: 2rem; */
+  /* padding: 2rem 5rem; */
   position: relative;
 }
 
-.my-work-spec p {
-  color: var(--color-white);
-  max-width: 15em;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0.5em;
+.my-work-card {
+  padding: 1rem 1.5rem 0 1.5rem;
+  top: -30px;
+  position: relative;
 }
 
-.my-work-spec h4 {
+.my-work-card p {
+  color: var(--color-white);
+  /* max-width: 15em; */
+  text-align: center;
+  margin: 0 auto;
+}
+
+.my-work-card h4 {
   max-width: 15em;
   text-align: center;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0.5rem;
 }
 
 .my-work-spec img {
   display: block;
   max-height: 300px;
-  width: 90%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
   pointer-events: none;
   position: relative;
+  top: -30px;
 }
 
-.my-work-spec ul {
+.my-work-card ul {
   color: var(--color-white);
   font-style: normal;
   font-weight: bold;
@@ -418,13 +445,27 @@ footer {
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .my-work-spec:hover {
     top: -4px;
+  }
+
+  .my-work-container {
+    flex-direction: row;
   }
 }
 
 footer {
   background-color: var(--color-footer);
   height: 100px;
+  /* position: relative; */
+}
+
+footer p {
+  /* margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem; */
 }
