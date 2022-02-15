@@ -556,11 +556,11 @@ input:checked + .slider:before {
 }
 
 .contact-content {
-  max-width: 40vw;
+  width: 100%;
 }
 
 .form {
-  width: 40vw;
+  width: 100%;
 }
 
 .input {
