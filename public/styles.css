@@ -35,20 +35,6 @@ html[data-theme="dark"] {
   --emphasis: #1985a1;
 }
 
-/* :root {
-  --color-white: #fff;
-  --color-purple: #7209b7;
-  --color-blue: #4895ef;
-  --color-dark-blue: #4361ee;
-  --color-pink: #f72585;
-  --color-dark: #7209b7;
-  --color-footer: #3a0ca3;
-  --font-family: "Open Sans", "Rubik";
-  min-width: 300px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-} */
-
 /* Provide consistent margin and padding across browsers */
 html,
 body,
@@ -136,7 +122,6 @@ header {
   border-bottom: 3px solid var(--emphasis);
   background-color: var(--dark);
   padding: 1rem calc(5vw - 0.5rem);
-  /* padding: 1rem; */
 }
 
 nav {
@@ -253,11 +238,9 @@ input:checked + .slider:before {
   position: relative;
   margin: 0 auto;
   width: 90vw;
-  /* max-width: 1100px; */
 }
 
 .headline {
-  /* padding: 1rem 2rem; */
   padding: 2rem 0 0 0;
   text-align: center;
 }
@@ -427,15 +410,11 @@ input:checked + .slider:before {
 }
 
 .photos {
-  /* margin: 0 auto; */
   max-width: 15rem;
   padding: 0 0 2rem 0;
 }
 
 .about-contents {
-  /* margin: 0 auto; */
-  /* padding: 1rem 2vw; */
-  /* max-width: 60rem; */
   max-width: 40rem;
 }
 
@@ -457,7 +436,6 @@ input:checked + .slider:before {
 }
 
 .contact-headers h2 {
-  /* text-align: center; */
   margin: 0 auto;
   padding: 2rem;
 }
@@ -480,7 +458,6 @@ input:checked + .slider:before {
 }
 
 .my-work-headers h2 {
-  /* text-align: center; */
   margin: 0 auto;
   padding: 2rem;
 }
@@ -495,7 +472,6 @@ input:checked + .slider:before {
 
 .my-work-container {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -523,7 +499,6 @@ input:checked + .slider:before {
 
 .my-work-card p {
   color: var(--light);
-  /* max-width: 15em; */
   text-align: center;
   margin: 0 auto;
 }
