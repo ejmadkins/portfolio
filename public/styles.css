@@ -420,28 +420,6 @@ input:checked + .slider:before {
 
 /* 
 //////////////////////////////
-//////     CONTACT      //////
-//////////////////////////////
-*/
-
-.contact {
-  background-color: var(--light);
-  border-bottom: 4px solid var(--emphasis);
-}
-
-.contact-headers {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 50rem;
-}
-
-.contact-headers h2 {
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-/* 
-//////////////////////////////
 //////      WORK        //////
 //////////////////////////////
 */
@@ -542,6 +520,27 @@ input:checked + .slider:before {
     flex-direction: row;
   }
 }
+/* 
+//////////////////////////////
+//////     CONTACT      //////
+//////////////////////////////
+*/
+
+.contact {
+  background-color: var(--light);
+  border-bottom: 4px solid var(--emphasis);
+}
+
+.contact-headers {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.contact-headers h2 {
+  margin: 0 auto;
+  padding: 2rem;
+}
 
 .contact-container {
   display: flex;
@@ -557,10 +556,12 @@ input:checked + .slider:before {
 
 .contact-content {
   width: 100%;
+  max-width: 25rem;
 }
 
 .form {
   width: 100%;
+  max-width: 25rem;
 }
 
 .input {
